@@ -1,0 +1,181 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #9B59B6;
+    /* Brighter purple */
+    color: white;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00FF00;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 0;
+}
+
+.menu li.active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.user-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.quick-links button,
+.overview button {
+    margin: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F9FAFB;
+    cursor: pointer;
+}
+
+.overview {
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.chart {
+    width: 100%;
+    height: 300px;
+    background-color: #F0F0F0;
+    margin-top: 20px;
+}
+
+#myChart {
+    width: 100%;
+    height: 100%;
+}
+
+.right-sidebar {
+    width: 326px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid #F2F4F7;
+    overflow-y: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 2px solid #F2F4F7;
+    margin-bottom: 18px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.notification-icon {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.trading-accounts h3,
+.open-trades h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.account,
+.trade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.account-details,
+.trade-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-type {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.account-info,
+.account-balance {
+    font-size: 12px;
+    color: #6B7280;
+}
+
+.account-icon {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.trade-details span {
+    font-size: 12px;
+    color: #6B7280;
+}
+
+.trade-profit {
+    color: #22C55E;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.trade-loss {
+    color: #EF4444;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.positive {
+    border-left: 4px solid #22C55E;
+}
+
+.negative {
+    border-left: 4px solid #EF4444;
+}
